@@ -9,5 +9,5 @@ select i.freight_value as valor_frete,
     join customers c on o.customer_id = c.customer_id
     join sellers s on i.seller_id = s.seller_id
     where i.freight_value > 0 
-    order by i.freight_value
+    order by i.freight_value desc
     
